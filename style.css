@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header h2{
+    font-size: 40px;
+    padding: 10px 40px ;
+    color: rgb(5, 39, 188);
+    font-family: 'Segoe UI', sans-serif;
+    animation: headertext 5s alternate infinite;
+}
+nav{
+    padding: 2rem 3rem;
+}
+.navbar a{
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bolder;
+    color: white;
+}
+a:hover{
+    color: rgb(32, 32, 181);
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    color:white;
+}
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    line-height: 1.7;
+}
+.photo div{
+    height: 450px;
+    width:370px;
+}
+.photo img{
+    height: 450px;
+    width:370px;
+    border-radius: 10%;
+}
+.aboutme{
+    font-size: 1.6rem;
+    height: 450px;
+    width:700px;
+}
+span{
+    color: rgb(50, 77, 199);
+}
+.text span::before{
+    color: rgb(184, 112, 18);
+    content: "";
+    animation: text 5s alternate infinite;
+}
+.footer{
+    position: sticky;
+    top: 100%;
+    padding:1rem;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.6;
+    color: white;
+}
+
+.footer a{
+    color: white;
+    font-size: 1.4rem;
+    padding: 1rem;
+    transition:0.3s;
+}
+.footer a:hover{
+    font-size: 1.9rem;
+    transition: ease;
+    color: rgb(8, 192, 122);
+}
+@keyframes text {
+    0%{content: "Full Stack Developer";}
+    50%{content:"WebApp Developer";}
+    100%{content:"Web Designer";}
+}
+@keyframes headertext{
+    0%{color:rgb(52, 19, 183) ;}
+    50%{color:rgb(210, 42, 23) ;}
+    100%{color:rgb(142, 198, 30);}
+}
